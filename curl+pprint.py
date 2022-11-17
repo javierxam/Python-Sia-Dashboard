@@ -1,6 +1,4 @@
 from io import BytesIO
-"""pycurl to get a json and prety print"""
-
 import json
 from urllib import response
 import pycurl
