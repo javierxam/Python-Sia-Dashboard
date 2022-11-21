@@ -136,11 +136,16 @@ dateString=("Timestamp =", dt_string)
 bigNodeStringStorage=('BIG NODE STATS\nSTORAGE -> Available '+str(bigNodeStorageRemaining)+'GB | Stored '+str(bigNodeStorageUsed)+'GB | Total '+ str(bigNodeStorageTotal)+'GB')
 bigNodeStringBandwith=('BANDWIDTH -> Download '+ str(round(bigNodeDownloadTotal))+'GB | Uploaded '+str(round(bigNodeUploadTotal))+'GB')
 
-#format and save the values in a json file
+#Pretty print for regular nodes
 stringStorage=('REGULAR NODES STATS\nSTORAGE -> Available '+str(grandStorageRemaining)+'GB | Stored '+str(grandStorageUsed)+'GB | Total '+str(grandStorageTotal)+'GB')
 stringBandwith=('BANDWITH -> Downloaded '+ str(round(grandDownloadTotal))+'GB | Uploaded '+str(round(grandUploadTotal))+'GB')
+
 stringFarm='\n'+str(dateString)+'\n'+stringStorage+'\n'+stringBandwith+'\n'+bigNodeStringStorage+'\n'+bigNodeStringBandwith+'\n'
+
+#print stats
 print(stringFarm)
-myfile=open('database.test', 'a') 
+
+#save and write stats
+myfile=open('database.txt', 'a') 
 myfile.write(stringFarm)
 myfile.close()
