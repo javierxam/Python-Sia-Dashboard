@@ -1,0 +1,16 @@
+[Unit]
+Description= Xamboard backend service
+After=network.target
+
+[Service]
+WorkingDirectory=/home/xavi/PYTHONDASHBOARD/
+Type=simple
+ExecStart=/usr/bin/python3 /home/xavi/PYTHONDASHBOARD/backend.py
+Restart=always
+User=xavi
+Group=xavi
+RestartSec=120
+
+[Install]
+WantedBy=multi-user.target
+Alias=backend.service

@@ -28,7 +28,7 @@ bigNodeStorageUsed=0
 run=True
 
 #while loop running every 10 minutes
-while(run)
+while(run):
     #var reset for the nested loop
     storageRemaining=0
     storageTotal=0
