@@ -155,7 +155,7 @@ while(run):
     Dictionary={'grandStorageTotal':int(grandStorageTotal),'grandStorageUsed':int(grandStorageUsed),'grandStorageRemaining':int(grandStorageRemaining),
             'bigNodeStorageTotal':int(bigNodeStorageTotal),'bigNodeStorageUsed':int(bigNodeStorageUsed),'bigNodeStorageRemaining':int(bigNodeStorageRemaining),
             'grandDownloadTotal':int(grandDownloadTotal), 'grandUploadTotal':int(grandUploadTotal),
-            'bigNodeDownloadTotal':int(bigNodeDownloadTotal),'bigNodeUploadTotal':int(bigNodeUploadTotal)}
+            'bigNodeDownloadTotal':int(bigNodeDownloadTotal),'bigNodeUploadTotal':int(bigNodeUploadTotal),'timestamp':str(dt_string)}
 
 
     #print(pprint.pprint(Dictionary))
